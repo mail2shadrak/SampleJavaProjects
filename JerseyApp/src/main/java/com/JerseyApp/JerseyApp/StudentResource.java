@@ -11,10 +11,10 @@ import javax.ws.rs.core.MediaType;
 public class StudentResource {
 	
 	@GET
-	@Produces(MediaType.APPLICATION_ATOM_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Student getStudent(@PathParam("student")String student) {
 		
-		System.out.println("get Student Called ... !");
+		System.out.println("Get Student Called ... !");
 		Student st = new Student();
 		st.setFirst_name("shadrak");
 		st.setSecond_name("Kommalapathi");
